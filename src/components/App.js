@@ -14,12 +14,15 @@ class App extends React.Component {
     this.setState({ fichaentrenamiento: data });
   }
 
+  renderContent() {
+    if (!this.state.fichaentrenamiento) {
+      return <p>Loading...</p>;
+    }
+    return <FichaEntrenamiento ficha={this.state.fichaentrenamiento} />;
+  }
+
   render() {
-    return (
-      <div className="app container">
-        <FichaEntrenamiento ficha={this.state.fichaentrenamiento} />
-      </div>
-    );
+    return <div className="app container">{this.renderContent()}</div>;
   }
 }
 
