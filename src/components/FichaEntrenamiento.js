@@ -1,5 +1,6 @@
 import React from "react";
 import FichaDetalles from "./FichaDetalles";
+import FichaListaUsuarios from "./FichaListaUsuarios";
 
 class FichaEntrenamiento extends React.Component {
   render() {
@@ -12,12 +13,13 @@ class FichaEntrenamiento extends React.Component {
       entrenador,
     };
 
-    console.log(detalles);
+    const usuarios = this.props.ficha.sesion_usuarios;
 
     return (
       <div className="ficha-entrenamiento">
         <h2 className="text-center">Ficha de entrenamiento</h2>
         <FichaDetalles detalles={detalles} />
+        <FichaListaUsuarios usuarios={usuarios} />
       </div>
     );
   }

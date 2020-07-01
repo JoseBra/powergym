@@ -14,7 +14,7 @@ const FichaDetalles = (props) => {
   )}`;
 
   return (
-    <div className="detalles">
+    <div className="ficha-detalles">
       <p>
         <i className="fa fa-clock-o" aria-hidden="true"></i>Fecha de inicio:{" "}
         {fechaInicio}
@@ -27,7 +27,7 @@ const FichaDetalles = (props) => {
           aria-hidden="true"
         ></i>Entrenador: {detalles.entrenador.nombre}
         <br />
-        <i class="fa fa-check" aria-hidden="true"></i>Actividad:{" "}
+        <i className="fa fa-check" aria-hidden="true"></i>Actividad:{" "}
         {detalles.actividad}
       </p>
     </div>
