@@ -1,0 +1,36 @@
+{
+  "id": 1,
+  "fechaInicio": "2020-06-25T10:00:00.000Z",
+  "fechaFin": "2020-06-25T11:00:00.000Z",
+  "actividad": "Entrenamiento Personal",
+  "entrenador": {
+    "id": 1,
+    "nombre": "Borja Martinez"
+  },
+  "sesion_usuarios": [
+    {
+      "id": 1,
+      "confirmado": true,
+      "usuario": {
+        "id": 2,
+        "nombre": "Jaimito Garcia"
+      }
+    },
+    {
+      "id": 2,
+      "confirmado": false,
+      "usuario": {
+        "id": 3,
+        "nombre": "Laura Segura"
+      }
+    },
+    {
+      "id": 3,
+      "confirmado": false,
+      "usuario": {
+        "id": 4,
+        "nombre": "Juan Carlos De la Rosa Quintana de todos los Santos"
+      }
+    }
+  ]
+}
